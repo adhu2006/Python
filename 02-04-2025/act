@@ -1,1 +1,22 @@
+def factorial(n):
+    if n == 0 or n == 1:  
+        return 1  # Base case
+    else:
+        return n * factorial(n - 1)  # Recursive call
+
+# Get user input
+num = int(input("Enter a number: "))
+
+# Print the factorial
+print("Factorial of", num, "is:", factorial(num))
+
+def count_words(text):
+    words = text.split()  # Split string into words
+    return len(words)  # Return word count
+
+# Get user input
+user_input = input("Enter a string: ")
+
+# Call the function and print the word count
+print("Word count:", count_words(user_input))
 
